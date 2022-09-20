@@ -1,0 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap'); */
+
+/* Estilos generales */
+@import url(./style.css);
+
+/* Estilos de otras secciones */
+@import url(./lulu.css);
+
+/* Estilos formulario de contacto */
+@import url(./contacto.css);
+

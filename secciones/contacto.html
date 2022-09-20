@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/iconos/logo_nbl_2.svg">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/37f45b6366.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="nombre-logo">
+        <img src="../assets/iconos/logo-nbl.svg" alt="logo">
+   
+    </div>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./aboutme.html">Acerca de mí</a></li>
+            <li><a href="./galeria.html">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="hide">
+            <i class="fa-solid fa-bars"></i> Menú
+        </div>
+    </nav>
+
+</header>
+<main>
+  
+</main>
+
+<footer>
+    <div class="footer">
+        <p>Belén Nobili - Fotografía - Desarrollo web</p>
+        <p>Todos los derechos reservados</p>
+    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+           $(".hide").on('click',function() {
+           $("nav ul").toggle('slow');
+           })
+
+           $(".nav-collapse").on('click', function(){
+           $("nav ul").toggle();
+           }); 
+           $(window).resize(function(){
+
+            var ancho = $(this).width();
+            if(ancho > 768){
+
+                $("nav ul").show();
+            }else if(ancho <= 768){
+                
+                $("nav ul").hide();
+            }
+        });
+    </script>
+</body>
+</html>
